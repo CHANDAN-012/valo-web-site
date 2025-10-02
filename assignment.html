@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valorant Page</title>
+  <style>
+   body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url("./images/image.avif") no-repeat center center fixed;
+  background-size: cover; /* image fullscreen cover karegi */
+}
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(20, 20, 20, 0.9);
+      border-bottom: 1px solid #444;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo img {
+      width: 120px;
+      height: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #ff4655;
+      transition: width 0.3s;
+    }
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .hero img {
+      width: 650px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255,70,85,0.6);
+    }
+    .hero h1 {
+      margin-top: 20px;
+      font-size: 40px;
+      color: #ff4655;
+    }
+    .hero p {
+      max-width: 600px;
+      margin: 10px auto;
+      font-size: 18px;
+      color: #ddd;
+    }
+
+    /* Cards Section */
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 50px 20px;
+      flex-wrap: wrap;
+    }
+    .card {
+      background: #222;
+      border-radius: 12px;
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card h3 {
+      color: #ff4655;
+    }
+    .card p {
+      color: #bbb;
+    }
+    .card a{
+      color: #ff4655;
+      text-decoration: none;
+    }
+    
+
+    /* Footer */
+    footer {
+      background: #eee5e5;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      border-top: 1px solid #444;
+    }
+    footer a {
+      color: #ff4655;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="https://playvalorant.com/en-us/">
+        <img src="./images/logo.jpeg" alt="logo">
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="https://playvalorant.com/en-us/platform-selection/" class="active">Play</a>
+      <a href="https://playvalorant.com/en-us/media/">Media</a>
+      <a href="https://playvalorant.com/en-us/news/">News</a>
+      <a href="https://discord.com/invite/valorant">Discord</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="./images/YouTube.jpeg" alt="Valorant">
+    <h1>Welcome to Valorant</h1>
+    <p>Step into the world of tactical shooters where every bullet, every move, and every strategy counts. 
+    Choose your agents, master your skills, and dominate the battlefield!</p>
+  </section>
+
+  <!-- Cards Section -->
+  <section class="cards">
+    <div class="card">
+      <h3><a href="https://playvalorant.com/en-us/agents/">🔥 Agents</a></h3>
+      <p>Pick from a roster of unique agents, each with powerful abilities to change the game.</p>
+    </div>
+    <div class="card">
+      <h3>
+        <a href="https://playvalorant.com/en-us/maps/">🗺 Maps
+          </a>
+        </h3>
+      <p>Experience tactical battlegrounds with unique layouts and creative strategies.</p>
+      
+    </div>
+    <div class="card">
+      <h3><a href="https://valorantesports.com/en-GB/">⚔️ Competitive</a></h3>
+      <p>Climb the ranks, prove your skills, and become the ultimate champion.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Riot Games | All Rights Reserved</p>
+    <p>
+      <a href="https://www.facebook.com/VALORANT#">Facebook</a> |
+      <a href="https://x.com/valorant">Twitter</a> |
+      <a href="https://www.instagram.com/valorant">Instagram</a>
+    </p>
+  </footer>
+</body>
+</html>
+
